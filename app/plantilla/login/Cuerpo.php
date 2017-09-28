@@ -29,7 +29,24 @@
 </div>
 
 
+<div id="banner" class="modal">
+                <div class="modal-content">
+                    <form class="col s8">
+                        <div class="row">
+                            <form class="col s10">
+                                <div class="row">
+                                    <a id="modalcerrar" class=" modal-action modal-close waves-effect waves-light right  "><i class="material-icons prefix"><img class="iconocerrarmodal" src="../app/img/desenfrenado.png" style="width: 20px;float: right;"></i></a>
+                                    <center>
+                                    <a href="http://dawesystems.com/contact-us.html" target="_blank"><img src="https://i0.wp.com/empiezaweb.com/wp-content/uploads/2017/06/Depositphotos_112458236_original.jpg?fit=3648%2C3648&ssl=1" alt="Hosting" border="0" style="width:300px; height:300px"" /><p><center>Su dominio expirará el dia 03 de Octubre, contacte con la empresa antes de la fecha para realizar su pago anual.</center></p></a>
+									</center>
+                                </div>
+                            </form>
+                        </div>
 
+                    </form>
+                </div>
+                
+            </div>
 
 
 <!-- ********************************** login fin ********************************** -->  
