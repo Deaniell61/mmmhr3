@@ -38,7 +38,7 @@ function buscarInventario($datos)
 				document.getElementById('precioM').focus();
 				document.getElementById('precioG').focus();
 				document.getElementById('MinimoCant').focus();";
-		$form .=" habilita(true);";
+		$form .=" habilita(false);";
 		
 		
 		$form .="</script>";

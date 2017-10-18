@@ -8,7 +8,7 @@
 
 <script type="text/javascript" src="app/js/login.js"></script>   
 <script>
-$('#banner').openModal();
+//$('#banner').openModal();
 </script>
 
 
