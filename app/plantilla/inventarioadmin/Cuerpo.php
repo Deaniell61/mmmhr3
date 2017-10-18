@@ -103,7 +103,7 @@
 
                         </div>
                     </div>
-                     <div class="input-field col s10">
+                     <div class="input-field col s10" style="display:none">
                       
                         <input id="idproducto" disabled type="text" class="validate">
                         <input id="idproducto2" disabled type="text" class="validate">
