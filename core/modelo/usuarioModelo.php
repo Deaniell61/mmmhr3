@@ -32,7 +32,7 @@ function login($user, $pass)
 				$_SESSION['SOFT_DESTINO_EMAIL']="";
 		   
 		   			cargarModulos($_SESSION['SOFT_USER_ID']);
-				echo "Modulo/Inicio.php";
+				echo "Modulo/?Inicio";
 			}
 			else
 			{  
@@ -642,7 +642,7 @@ function CerrarSesion()
 	session_start();
     session_destroy();
 
-    echo '../index.php';
+    echo '../';
 	
 }
 function compruebaEnvioCorreo($datos)

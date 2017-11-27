@@ -170,7 +170,7 @@ function nitificaciones()
 				{
 
 					$_SESSION['notified2P'][($contPr)] = $fila[2]." - ".$fila[3];//substr($fila[0],0,10);
-					$_SESSION['direccione2P'][($contPr)] = "InventarioAdministrador.php?codigo=".$fila['3'];
+					$_SESSION['direccione2P'][($contPr)] = "?InventarioAdministrador&codigo=".$fila['3'];
 					$contador++;
 					$contPr++;
 				}
@@ -212,7 +212,7 @@ function nitificaciones()
 
                  <?php }?>
 						<li><a id="ayuda" class="right ayuda"><img class="ayudaI" src="../app/img/ayuda.png"></a></li>
-						<li><a href="Inicio.php"><h4><?php echo $_SESSION['SOFT_USER'];?></h4> </a></li>
+						<li><a href="?Inicio"><h4><?php echo $_SESSION['SOFT_USER'];?></h4> </a></li>
 						<li><a class="right"  id="logout" href="#!">Cerrar Session</a></li>
 
 
@@ -243,7 +243,7 @@ function nitificaciones()
 													if($_SESSION['notified1'][($i)]!="" && $_SESSION['notified1'][($i)]!=NULL)
 													{
 												echo "
-													<li class=\"listaNotificacion\" onClick=\"location.href='Cobrar.php?fd=".$_SESSION['direccione1'][($i)]."'\">".$_SESSION['notified1'][($i)]." </li>
+													<li class=\"listaNotificacion\" onClick=\"location.href='?Cobrar&fd=".$_SESSION['direccione1'][($i)]."'\">".$_SESSION['notified1'][($i)]." </li>
 													";
 													}
 												}
@@ -256,7 +256,7 @@ function nitificaciones()
 													if($_SESSION['notified22'][($i)]!="" && $_SESSION['notified22'][($i)]!=NULL)
 													{
 												echo "
-													<li class=\"listaNotificacion\"  onClick=\"location.href='Pagar.php?fd=".$_SESSION['direccione22'][($i)]."'\">".$_SESSION['notified22'][($i)]." </li>
+													<li class=\"listaNotificacion\"  onClick=\"location.href='?Pagar&fd=".$_SESSION['direccione22'][($i)]."'\">".$_SESSION['notified22'][($i)]." </li>
 													";
 													}
 												}
@@ -290,9 +290,9 @@ function nitificaciones()
 
 <!-- mobil ----------------------------------------------------------->
       <ul class="side-nav" id="mobile-demo">
-				<li><a style="cursor:pointer;" href="Inicio.php"><h4 id="ocultarmensaje"><?php echo $_SESSION['SOFT_USER'];?></h4> </a></li>
+				<li><a style="cursor:pointer;" href="?Inicio"><h4 id="ocultarmensaje"><?php echo $_SESSION['SOFT_USER'];?></h4> </a></li>
 				 <li><div class="divider"></div></li>
-        <li><a id="ayuda" href="ayuda.php" class="ayuda" style="cursor:pointer;">Ayuda</a></li>
+        <li><a id="ayuda" href="?ayuda" class="ayuda" style="cursor:pointer;">Ayuda</a></li>
 		
  <li><a id="mensaje" onclick="mostrar()"  class="ayuda" style="cursor:pointer;" >Mensajes <?php echo $_SESSION['notified2'];?></a></li>
 
@@ -317,7 +317,7 @@ function nitificaciones()
 						 for($i=0;$i<count($_SESSION['notified1']);$i++)
 						 {
 						 echo "
-							 <li class=\"listaNotificacion\" onClick=\"location.href='Cobrar.php'\">".$_SESSION['notified1'][($i)]." </li>
+							 <li class=\"listaNotificacion\" onClick=\"location.href='?Cobrar'\">".$_SESSION['notified1'][($i)]." </li>
 							 ";
 						 }
 						 echo "
@@ -326,7 +326,7 @@ function nitificaciones()
 						 for($i=0;$i<count($_SESSION['notified22']);$i++)
 						 {
 						 echo "
-							 <li class=\"listaNotificacion\"  onClick=\"location.href='Cobrar.php'\">".$_SESSION['notified22'][($i)]." </li>
+							 <li class=\"listaNotificacion\"  onClick=\"location.href='?Cobrar'\">".$_SESSION['notified22'][($i)]." </li>
 							 ";
 						 }
 						 echo "

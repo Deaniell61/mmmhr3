@@ -14,7 +14,7 @@ if(isset($_SESSION['SOFT_USER']))
 else
 {
 
-    header('location: ../index.php');
+    header('location: ../');
 
 
 }
