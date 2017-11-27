@@ -136,7 +136,7 @@ function quitaInventario($datos)
 					{
 							
 									
-							//		 echo "<script>window.location.href = 'Ventas.php';/script>";
+							//		 echo "<script>window.location.href = '?Ventas';/script>";
 									//echo '2';
 							if(!$mysql->query("update ventas set estado=1 where idVentas='".$_SESSION['idVenta']."'"))
 									 {
@@ -163,7 +163,7 @@ function quitaInventario($datos)
 										
 						
 										$mysql->query("COMMIT");
-										echo "<script>setTimeout(function(){window.location.href=\"Ventas.php\";},300);</script>";
+										echo "<script>setTimeout(function(){window.location.href=\"?Ventas\";},300);</script>";
 									}
 						
 							

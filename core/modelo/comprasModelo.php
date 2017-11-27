@@ -127,7 +127,7 @@ function agregaInventario($datos)
 					{
 							 
 									
-							//		 echo "<script>window.location.href = 'Ventas.php';/script>";
+							//		 echo "<script>window.location.href = '?Ventas';/script>";
 									
 							if(!$mysql->query("update compras set estado=1 where idcompras='".$_SESSION['idCompra']."'"))
 									 {
@@ -154,7 +154,7 @@ function agregaInventario($datos)
 							 
 						
 										$mysql->query("COMMIT");
-										echo "<script>setTimeout(function(){window.location.href=\"Compras.php\";},300);</script>";
+										echo "<script>setTimeout(function(){window.location.href=\"?Compras\";},300);</script>";
 									}
 						
 							
