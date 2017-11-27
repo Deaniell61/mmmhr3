@@ -4,7 +4,9 @@
 <!------------------ Zonas de script -------------------->
 
 <script type="text/javascript" src="../app/js/generarC.js"></script>   
-
+<script>
+llamarProveedor();
+</script>  
    </div>
  </body>
 </html>

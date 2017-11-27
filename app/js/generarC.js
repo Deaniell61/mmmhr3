@@ -119,7 +119,7 @@ function buscarProveedor(buscar,evt)
 
 		$('#modal4').openModal();
 		setTimeout(function(){
-		llamarProveedor();},300);
+		llamarProveedor();},100);
 	}
 	else
 	if(buscar.value=="")
