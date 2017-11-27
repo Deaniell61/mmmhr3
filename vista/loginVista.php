@@ -19,7 +19,7 @@ function Valida()
 	{
 		?>
         <script>
-        	location.href='Modulo/Inicio.php';
+        	location.href='Modulo/?Inicio';
         </script>
         <?php	
 	}
