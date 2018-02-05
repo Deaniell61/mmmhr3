@@ -243,8 +243,8 @@ function nitificaciones()
 													if($_SESSION['notified1'][($i)]!="" && $_SESSION['notified1'][($i)]!=NULL)
 													{
 												echo "
-													<li class=\"listaNotificacion\" onClick=\"location.href='?Cobrar&fd=".$_SESSION['direccione1'][($i)]."'\">".$_SESSION['notified1'][($i)]." </li>
-													";
+													<li class=\"listaNotificacion\" onClick=\"location.href='?Cobrar'\">".$_SESSION['notified1'][($i)]." </li>
+													";//&fd=".$_SESSION['direccione1'][($i)]."
 													}
 												}
 												
@@ -256,8 +256,8 @@ function nitificaciones()
 													if($_SESSION['notified22'][($i)]!="" && $_SESSION['notified22'][($i)]!=NULL)
 													{
 												echo "
-													<li class=\"listaNotificacion\"  onClick=\"location.href='?Pagar&fd=".$_SESSION['direccione22'][($i)]."'\">".$_SESSION['notified22'][($i)]." </li>
-													";
+													<li class=\"listaNotificacion\"  onClick=\"location.href='?Pagar'\">".$_SESSION['notified22'][($i)]." </li>
+													";//&fd=".$_SESSION['direccione22'][($i)]."
 													}
 												}
 												
