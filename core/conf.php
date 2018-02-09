@@ -9,6 +9,12 @@ define('HOST','mysql.hostinger.mx');
 define('USER','u757044153_dev');
 define('PASS','Softronic16');
 define('DB','u757044153_dev');
+
+define('HOST','mysql.hostinger.mx');
+define('USER','u757044153_2016');
+define('PASS','mGqiXvxxU89I');
+define('DB','u757044153_2016');
+
 /*
 define('HOST','mysql.hostinger.mx');
 define('USER','u757044153_her');
