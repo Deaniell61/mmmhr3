@@ -92,6 +92,39 @@ function editarCuentasP($dato)
     return printf($form);
     
 }
+
+function eliminarCuentaP($dato)
+{
+	
+
+    $mysql = conexionMysql();
+    $form="";
+    $sql = "DELETE FROM cuentaspagar where estado=1 and idcuentasP='".$dato[0]."' ";
+
+    if($resultado = $mysql->query($sql))
+    {
+      
+		  	$form .="<script>";
+			$form .="alert('Se Elimino la cuenta');";
+			$form .="</script>";
+			
+			$form="<script>location.reload();</script>";
+
+    
+    }
+    else
+    {   
+    
+    $form = "<div>$sql<script>console.log('".$dato[0]."');</script></div>";
+    
+    }
+    
+    
+    $mysql->close();
+    
+    return printf($form);
+    
+}
 function verCuentaP($dato)
 {
 	

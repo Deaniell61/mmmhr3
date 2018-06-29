@@ -160,6 +160,20 @@ if($_POST)
         mostrarCuentasC($datos);
 
     }
+	else if($transaccion == 14)
+    {
+        
+          
+
+        
+        $datos[0] = $_POST['id'];
+       
+
+        
+        eliminarCuentaC($datos);
+        
+    
+    }
     
 //----------- fin gestion ----------/    
     

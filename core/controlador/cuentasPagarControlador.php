@@ -159,6 +159,20 @@ if($_POST)
         mostrarCuentasP($datos);
 
     }
+	else if($transaccion == 14)
+    {
+        
+          
+
+        
+        $datos[0] = $_POST['id'];
+       
+
+        
+        eliminarCuentaP($datos);
+        
+    
+    }
     
 //----------- fin gestion ----------/    
     

@@ -69,18 +69,22 @@ else
                 $tabla .="<td>" .$fila["5"]. "</td>";
                 $tabla .="<td>" .$fila["2"].      " " .$fila["3"].      "</td>";
                 $tabla .="<td>" .toMoney($fila["1"]).      "</td>";
+                $tabla .="<td class='anchoC'>";
 				if($_SESSION['SOFT_ACCESOModifica'.'cuentas']=='1')
 				{
-                $tabla .="<td class='anchoC'><a class='waves-effect waves-light btn orange lighten-1 modal-trigger botonesm editar' onclick=\"editar('".$fila["4"]."')\"><i class='material-icons left'><img class='iconoeditcrud' src='../app/img/editar.png' /></i></a>";
+                $tabla .="<a class='waves-effect waves-light btn orange lighten-1 modal-trigger botonesm editar' onclick=\"editar('".$fila["4"]."')\"><i class='material-icons left'><img class='iconoeditcrud' src='../app/img/editar.png' /></i></a>";
 
 				}
-				else
+                
+                
+
+                $tabla .="<a class='waves-effect waves-light btn yellow dark-1 modal-trigger botonesm ver' onClick=\"ver('".$fila["4"]."')\"><i class='material-icons left'><img class='iconoeditcrud' src='../app/img/ojo.png' /></i></a>";
+                if($_SESSION['SOFT_ACCESOElimina'.'cuentas']=='1')
 				{
-					$tabla .="<td class='anchoC'>";
-				}
+                $tabla .="<a class='waves-effect waves-light btn red lighten-1 modal-trigger botonesm ' onclick=\"eliminar('".$fila["4"]."')\"><i class='material-icons left'><img class='iconoeditcrud' src='../app/img/boton-borrar.png' /></i></a>";
 
-                $tabla .="<a class='waves-effect waves-light btn yellow dark-1 modal-trigger botonesm ver' onClick=\"ver('".$fila["4"]."')\"><i class='material-icons left'><img class='iconoeditcrud' src='../app/img/ojo.png' /></i></a></td>";
-                $tabla .= "</tr>";
+				}
+                $tabla .= "</td></tr>";
             }
 
             $resultado->free();//librerar variable

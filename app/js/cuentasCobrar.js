@@ -189,6 +189,7 @@ function abonarCuenta()
     });            
 
 }
+
 function editar(id)
 {
 	 
@@ -217,6 +218,37 @@ function editar(id)
 
         }     
     });            
+
+}
+
+function eliminar(id)
+{
+	 
+    var idedit, trasDato; 
+
+    trasDato = 14;
+    if(confirm("¿Desea eliminar la Cuenta?")){
+
+    $.ajax
+    ({
+        type:"POST",
+        url:"../core/controlador/cuentasCobrarControlador.php",
+        data:'id=' + id  + '&trasDato=' + trasDato,
+        success: function(resp)
+        {
+
+
+
+            $('#mensajecc').html(resp); 
+            // $('#precargar').css('display','none');  
+
+
+
+
+        }     
+    });  
+    
+}
 
 }
 function ver(id)
